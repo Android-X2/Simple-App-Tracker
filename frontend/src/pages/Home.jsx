@@ -11,7 +11,7 @@ const Home = () => {
 
   useEffect(()=>{
     const fetchWorkouts = async () => {
-      const response = await fetch("/api/projects")
+      const response = await fetch("https://simple-project-tracker.onrender.com/api/projects")
       const json = await response.json()
 
       if(response.ok){

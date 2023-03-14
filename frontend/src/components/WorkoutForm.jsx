@@ -13,7 +13,7 @@ const WorkoutForm = () => {
 
     const workout = {title, description}
 
-    const response = await fetch('/api/projects',{
+    const response = await fetch('https://simple-project-tracker.onrender.com/api/projects',{
       method:"POST",
       body: JSON.stringify(workout),
       headers: {
@@ -57,7 +57,6 @@ const WorkoutForm = () => {
       />
       <button> Add Project</button>
       {error && <div className="error">{error}</div> }
-      <p>*Click on project to view bugs*</p>
     </form>
     
   )
